@@ -1,14 +1,14 @@
 # Postie — Browser-Based API Testing Client
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5)](https://html.spec.whatwg.org/)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3)](https://www.w3.org/TR/CSS/)
-[![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub_Pages-222222?style=for-the-badge&logo=github)](https://smresponsibilities.github.io/web_project/)
-[![Tool Category](https://img.shields.io/badge/Category-Developer_Tools-orange?style=for-the-badge)](https://shivammahajan.com/projects/)
+[![Live Interactive App](https://img.shields.io/badge/Live_App-shivammahajan.com%2FPostie-3b82f6?style=flat&logo=googlechrome&logoColor=white)](https://shivammahajan.com/Postie/)
+[![Portfolio Architecture](https://img.shields.io/badge/Architecture-shivammahajan.com%2Fprojects-ff5d01?style=flat)](https://shivammahajan.com/projects/)
+[![Author](https://img.shields.io/badge/Author-Shivam_Mahajan-success?style=flat)](https://shivammahajan.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A zero-install, lightweight browser-based API testing client and Postman alternative. Allows developers to dispatch HTTP requests (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`), manage query parameters and custom headers, inspect formatted responses, and persist request history locally in the browser.
+A zero-install, lightweight browser-based API testing client and Postman alternative. Allows developers to dispatch HTTP requests (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`), manage query parameters and custom headers, inspect formatted responses, and persist request history locally in browser storage.
 
-Live Tool: [Postie on GitHub Pages](https://smresponsibilities.github.io/web_project/) · [Portfolio](https://shivammahajan.com/)
+* **Launch Live App:** **[https://shivammahajan.com/Postie/](https://shivammahajan.com/Postie/)**
+* **Engineering Portfolio:** **[https://shivammahajan.com/projects/](https://shivammahajan.com/projects/)**
 
 ---
 
@@ -78,7 +78,7 @@ Desktop API tools like Postman and Insomnia have grown increasingly resource-hea
                                ▼
 ┌──────────────────────────────┐ ┌────────────────────────────┐
 │      Target Remote API       │ │    Browser LocalStorage    │
-│  (e.g., Fertilizer API, etc) │ │   (Timestamp, URL, Status) │
+│  (e.g., REST / GraphQL API)  │ │   (Timestamp, URL, Status) │
 └──────────────────────────────┘ └────────────────────────────┘
 ```
 
@@ -90,10 +90,10 @@ Requests are stored in `localStorage` under the key `api_request_history` as an 
 {
   "id": "req_1729012345",
   "method": "POST",
-  "url": "https://fertilizertypebysm.onrender.com/fertilizername",
+  "url": "https://api.example.com/endpoint",
   "headers": { "Content-Type": "application/json" },
-  "body": "{ \"temperature\": 25.0 }",
-  "timestamp": "2024-10-15T02:00:00Z",
+  "body": "{ \"query\": \"test\" }",
+  "timestamp": "2026-10-15T02:00:00Z",
   "status": 200,
   "elapsedMs": 42
 }
@@ -104,9 +104,9 @@ Requests are stored in `localStorage` under the key `api_request_history` as an 
 ## File Structure
 
 ```
-web_project/
+Postie/
 ├── assets/
-│   └── readme/         # Demo GIFs and screenshots
+│   └── readme/         # Demo screenshots
 ├── scripts/
 │   ├── script.js       # Main request builder, Fetch API caller, and response formatter
 │   └── history.js      # LocalStorage retrieval, search filtering, and replay
@@ -131,8 +131,8 @@ web_project/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/smresponsibilities/web_project.git
-   cd web_project
+   git clone https://github.com/smresponsibilities/Postie.git
+   cd Postie
    ```
 2. Open `index.html` directly in your browser:
    - On Windows: Double-click `index.html` or run `start index.html`
@@ -188,9 +188,10 @@ Then visit `http://localhost:8000`.
 
 ## Author & Connect
 
-Engineered by **Shivam Mahajan** — Systems, Backend & Distributed Systems Engineer.
+Engineered by **[Shivam Mahajan](https://shivammahajan.com/)** — Systems, Backend & Distributed Systems Engineer.
 
-- **Portfolio**: [https://shivammahajan.com/](https://shivammahajan.com/)
-- **Project Case Studies**: [https://shivammahajan.com/projects/](https://shivammahajan.com/projects/)
-- **GitHub**: [@smresponsibilities](https://github.com/smresponsibilities)
-- **LinkedIn**: [Shivam Mahajan](https://www.linkedin.com/in/mahajanshivam/)
+- **Live Tool:** [https://shivammahajan.com/Postie/](https://shivammahajan.com/Postie/)
+- **Engineering Portfolio:** [https://shivammahajan.com/](https://shivammahajan.com/)
+- **Software Catalog:** [https://shivammahajan.com/projects/](https://shivammahajan.com/projects/)
+- **GitHub:** [@smresponsibilities](https://github.com/smresponsibilities)
+- **LinkedIn:** [Shivam Mahajan](https://www.linkedin.com/in/mahajanshivam/)
