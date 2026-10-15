@@ -13,9 +13,11 @@ A zero-install, lightweight browser-based API testing client and Postman alterna
 ---
 
 ## Table of Contents
+- [Demo](#demo)
 - [Overview](#overview)
 - [Target Audience](#target-audience)
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [How It Works](#how-it-works)
   - [Architecture & Request Execution Pipeline](#architecture--request-execution-pipeline)
   - [Client-Side History & Storage Model](#client-side-history--storage-model)
@@ -30,6 +32,12 @@ A zero-install, lightweight browser-based API testing client and Postman alterna
 - [Performance & Footprint Benchmarks](#performance--footprint-benchmarks)
 - [Future Scope and Improvements](#future-scope-and-improvements)
 - [Author & Connect](#author--connect)
+
+---
+
+## Demo
+
+![Postie Interactive Demo](assets/readme/demo.gif)
 
 ---
 
@@ -165,6 +173,25 @@ Then visit `http://localhost:8000`.
 1. Click the **History** button in the header.
 2. Search through past endpoints or filter by method (`POST`, `GET`).
 3. Click any historic record to immediately repopulate the main editor for re-submission.
+
+---
+
+## Screenshots
+
+![Postie Main Interface](assets/readme/image.png)
+*Figure 1: Main request editor with HTTP verb dropdown and endpoint bar.*
+
+![Query Parameter and Header Management](assets/readme/image-1.png)
+*Figure 2: Key-value editor for request headers and URL parameters.*
+
+![Structured Request Payload Editor](assets/readme/image-2.png)
+*Figure 3: JSON payload editor with line numbering.*
+
+![Response Inspector and Network Latency](assets/readme/image-3.png)
+*Figure 4: Formatted response inspector with status code and round-trip timing.*
+
+![Persistent Local Storage History](assets/readme/image-4.png)
+*Figure 5: LocalStorage request history drawer with search and replay.*
 
 ---
 
